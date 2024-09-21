@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Noto-Serif';
+  font-style: normal;
+  src: url('assets/NotoSerif-Italic-VariableFont_wdth,wght.ttf');
+}
+
+/*전체 페이지의 기본 스타일*/
+body {
+  font-family: 'Noto-Serif', serif;
+  margin: 0;
+  color: white;
+}
+
+/*특정 리액트 컴포넌트, (app.js_에 관련된 스타일 정의*/
+.App {
+  background: linear-gradient(to bottom, #e78122, #f4e06a) !important; /* 원하는 배경색 */
+  min-height: 100vh; /* 전체 높이를 채우기 */
+  display: flex; /* 자식 요소 정렬을 위한 설정 */
+  flex-direction: column; /* 자식 요소 세로 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+  justify-content: center; /* 세로 중앙 정렬 */
+  color: white; /* 텍스트 색상 */
+}
+
+.submitbutton{
+  padding: 10px 20px;
+  font-size: 14px;
+  font-style: italic;
+  color: #706f6f;
+  margin: 0;
+  background-color: #95d298;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*green button*/
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: 'Noto-Serif', serif;
+  margin: 0;
+  background-color: #95d298;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/*place holder*/
+.button:hover {
+  background-color: #45a049; /* 호버 시 색상 변화 */
+}
+
+input {
+  border-radius: 5px; /* 입력 필드의 모서리를 둥글게 설정 */
+  padding: 10px; /* 패딩 추가 */
+  border: 1px solid #ccc; /* 테두리 설정 */
+}
+
+/* input 요소의 placeholder 스타일 */
+input::placeholder {
+  color: #706f6f; /* placeholder 텍스트 색상 */
+  font-style: italic; /* 이탤릭체 */
+}
+
+/*select box*/
+.dropdown-container {
+  margin: 20px 0; /* 상하 여백 추가 */
+}
+
+select {
+  padding: 10px; 
+  font-size: 14px; /* 글자 크기 */
+  font-style: italic; /*기울이기*/
+  color: #706f6f;
+  border: 1px solid #ccc; /* 테두리 색상 */
+  border-radius: 5px; /* 둥근 모서리 */
+  appearance: none; /* 기본 드롭다운 화살표 제거 (브라우저 기본 스타일 제거) */
+  background-color: #fff; /* 배경색 */
+  cursor: pointer; /* 포인터 커서 */
+  transition: border-color 0.3s; /* 테두리 색상 변화 애니메이션 */
+}
+
+select:focus {
+  border-color: #4CAF50; /* 포커스 시 테두리 색상 */
+  outline: none; /* 포커스 아웃라인 제거 */
+}
+
+option {
+  color: #5d5757; /* 기본 텍스트 색상 */
+}
+
+option[disabled] {
+  color: #999; /* 비활성화 옵션 색상 */
+}
